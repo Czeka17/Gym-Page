@@ -1,0 +1,37 @@
+@media(min-width:992px){
+.header{
+    flex-direction: row;
+    .header-img{
+        height: 100%;
+    }
+}
+main{
+    padding-top: 3em;
+    .about-us{
+        &-img{
+            order:0;
+            padding: 0 1em;
+        }
+        &-text{
+            order:0;
+            padding: 3em 1em;
+        }
+    }
+.offert{
+    &-box{
+    flex-direction: row;
+    }
+    &-text{
+        order:0;
+    }
+    &-img{
+        order:1;
+    }
+}
+.socials{
+    &-box{
+        flex-direction: row;
+    }
+}
+}
+}

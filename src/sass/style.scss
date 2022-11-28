@@ -1,0 +1,194 @@
+@import "./colors";
+@import "./animations";
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+hr{
+    margin: 0;
+}
+body{
+    font-size: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+    background-color: $secondary-color;
+    color: $third-color;
+}
+h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+.underline {
+    width: 60px;
+    height: 4px;
+    background-color: $third-color;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.navbar{
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    z-index: 999;
+    transition: .3s;
+        a, i{
+            color: $third-color;
+        }
+        a:hover, i:hover{
+            color: $fourth-color;
+        }
+        a:focus{
+            color:$fourth-color;
+        }
+}
+.header{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    &-img{
+        height: 50%;
+    position: relative;
+        background-image: url('../img/header-big.jpg');
+        background-size: cover;
+        background-position:center;
+        background-attachment: fixed;
+        z-index: 0;
+    }
+    &-shadow{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.7);
+        z-index: -1;
+    }
+    &-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2em;
+        text-align: center;
+        flex-direction: column;
+        text-transform: uppercase;
+        z-index: 5;
+        color: $third-color;
+    }
+    .btn{
+        color:$third-color;
+        border: 1px solid $third-color;
+        &:hover{
+            color:$main-color;
+            background-color: $third-color;
+        }
+    }
+}
+main{
+    background-color: $main-color;
+    .about-us{
+        padding: 3em 0;
+        &-img{
+            order: 0;
+            padding: 1em;
+            img{
+                width: 100%;
+            }
+        }
+        &-text{
+            padding: 1em;
+            order:1;
+        }
+    }
+    .offert{
+        &-box{
+            padding-top: 2em;
+            display: flex;
+        flex-direction: column;
+        }
+        &-img{
+            padding: 1em;
+            img{
+                width: 100%;
+            }
+        }
+        &-text{
+            display: flex;
+            padding: 1em;
+            flex-direction:column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+        &-btn{
+            text-decoration: none;
+            text-transform: uppercase;
+            border: 1px solid $third-color;
+            color: $third-color;
+            padding: 0.5em 1em;
+            &:hover{
+                color: $main-color;
+                background-color: $third-color;
+                transition: .3s;
+            }
+        }
+}
+    .group{
+        height: 70vh;
+        position: relative;
+        background-color: $secondary-color;
+        &-ref{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%);
+            button{
+                background-color: transparent;
+                text-decoration: none;
+                text-transform: uppercase;
+                border: 1px solid $third-color;
+                color: $third-color;
+                padding: 1em 2em;
+                text-align: center;
+                transition: .3s;
+                &:hover{
+                    background-color: $third-color;
+                    color:$main-color;
+                }
+            }
+        }
+    }
+    .socials{
+        &-box{
+            display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+        &-img{
+            img{
+                padding: 1em;
+                width: 100%;
+            }
+        }
+        &-text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            a{
+                padding: 1em;
+                text-align: center;
+                text-decoration: none;
+                color:$third-color;
+            }
+        }
+    }
+}
+.footer{
+    text-align: center;
+    padding: 1em;
+}
+@import "./medium";
