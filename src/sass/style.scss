@@ -50,10 +50,9 @@ h2{
     &-img{
         height: 50%;
     position: relative;
-        background-image: url('../img/header-big.jpg');
+        background-image: url('../img/Te.jpg');
         background-size: cover;
         background-position:center;
-        background-attachment: fixed;
         z-index: 0;
     }
     &-shadow{
@@ -62,7 +61,7 @@ h2{
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0,0,0,0.7);
+        background-color: rgba(0,0,0,0.5);
         z-index: -1;
     }
     &-text{
@@ -108,7 +107,9 @@ main{
         flex-direction: column;
         }
         &-img{
+            position: relative;
             padding: 1em;
+            z-index: 0;
             img{
                 width: 100%;
             }
@@ -184,6 +185,29 @@ main{
                 text-decoration: none;
                 color:$third-color;
             }
+        }
+    }
+}
+.offert-list{
+    padding: 2em 1em;
+    background-color: $secondary-color;
+    &-box{
+        border: 1px solid $third-color;
+        border-radius: 10px;
+        text-align: center;
+        padding: 1em;
+        margin: 1em;
+        h3{
+            font-weight: bold;
+            font-size: 2rem;
+        }
+        p{
+            padding: 0.1em 0;
+            letter-spacing: 2px;
+        }
+        .price-tag{
+            font-weight: bold;
+            font-size: 2rem;
         }
     }
 }
