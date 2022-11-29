@@ -33,5 +33,25 @@ main{
         flex-direction: row;
     }
 }
+.table-list{
+        &-box{
+            flex-direction: row;
+        }
+    }
+    .promotions{
+        &-box{
+            flex-direction: row;
+        }
+}
+.contact-us{
+    &__form{
+        &-box{
+            textarea{
+                    width: 500px;
+                    height: 150px;
+            }
+        }
+    }
+}
 }
 }

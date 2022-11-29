@@ -1,11 +1,12 @@
 @import "./colors";
-@import "./animations";
 
 
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 hr{
     margin: 0;
@@ -184,19 +185,60 @@ main{
                 text-align: center;
                 text-decoration: none;
                 color:$third-color;
+                &:nth-child(2){
+                    word-break: break-all;
+                }
             }
         }
     }
 }
+.table-list{
+    padding: 2em 0.5em;
+    .carnets{
+        padding: 1em;
+    }
+    tr, th, td{
+        border: 1px solid $third-color;
+    }
+    tr:last-child{
+        font-weight: bold;
+    }
+    tr:nth-child(even){
+        background-color: $secondary-color;
+    }
+    table{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 2em 0em;
+        td{
+            padding: 1em;
+        }
+        }
+        &-box{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+    }
 .offert-list{
     padding: 2em 1em;
     background-color: $secondary-color;
     &-box{
+        position: relative;
         border: 1px solid $third-color;
         border-radius: 10px;
         text-align: center;
         padding: 1em;
         margin: 1em;
+        overflow: hidden;
+        transition: .5s;
+        &:hover{
+            background-color: $third-color;
+            color:$main-color;
+        }
         h3{
             font-weight: bold;
             font-size: 2rem;
@@ -211,8 +253,63 @@ main{
         }
     }
 }
+    .promotions{
+        padding: 2em 1em;
+        &-box{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+        }
+        &-list{
+            border: 1px solid $third-color;
+            border-radius: 10px;
+            padding: 2em;
+            margin: 2em 0;
+            transition: .5s;
+            .discount-tag, span{
+                font-weight: bold;
+            }
+            &:hover{
+                background-color: $third-color;
+                color:$main-color;
+            }
+    }
+}
+.contact-us{
+    padding: 3em 2em;
+    background-color: $secondary-color;
+    &__form{
+        padding: 2em 0.5em;
+        display: flex;
+        flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        &-box{
+            padding: 1em;
+            input{
+                padding: 0.5em 0em;
+            }
+            input:nth-child(1){
+                margin-bottom: 2em;
+            }
+            textarea{
+                    width: 300px;
+                    height: 150px;
+            }
+        }
+        &-btn{
+            padding: 1em 2em;
+            color:$third-color;
+            background-color:$secondary-color;
+            border: 1px solid $third-color;
+        }
+    }
+}
 .footer{
     text-align: center;
     padding: 1em;
 }
+@import "./animations";
 @import "./medium";
