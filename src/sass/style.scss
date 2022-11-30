@@ -194,6 +194,7 @@ main{
 }
 .table-list{
     padding: 2em 0.5em;
+    margin-top: 1em;
     .carnets{
         padding: 1em;
     }
@@ -222,6 +223,22 @@ main{
             justify-content: space-around;
             align-items: center;
         }
+        &-contact{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+            text-align: center;
+            a{
+                padding: 1em;
+                text-decoration: none;
+                color: $third-color;
+                transition: color .5s;
+                &:hover{
+                    color: $fourth-color;
+                }
+            }
+        }
     }
 .offert-list{
     padding: 2em 1em;
@@ -235,9 +252,10 @@ main{
         margin: 1em;
         overflow: hidden;
         transition: .5s;
-        &:hover{
+        &:hover button, &:hover{
             background-color: $third-color;
             color:$main-color;
+            border: 1px solid $main-color;
         }
         h3{
             font-weight: bold;
@@ -250,6 +268,14 @@ main{
         .price-tag{
             font-weight: bold;
             font-size: 2rem;
+        }
+        button{
+            padding: 0.5em 1em;
+            background-color: transparent;
+            color: $third-color;
+            border: 1px solid $third-color;
+            border-radius: 10px;
+            transition: .5s;
         }
     }
 }
@@ -275,6 +301,23 @@ main{
                 background-color: $third-color;
                 color:$main-color;
             }
+    }
+}
+.we-are-here{
+    padding: 3em 0;
+    &__box{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        &--map{
+            padding: 2em;
+        }
+        &--text{
+            text-align: center;
+            letter-spacing: 2px;
+            font-size: 2rem;
+        }
     }
 }
 .contact-us{

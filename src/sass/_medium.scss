@@ -43,6 +43,11 @@ main{
             flex-direction: row;
         }
 }
+.we-are-here{
+    &__box{
+        flex-direction: row;
+    }
+}
 .contact-us{
     &__form{
         &-box{
