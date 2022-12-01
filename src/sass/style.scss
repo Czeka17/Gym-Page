@@ -5,8 +5,6 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    max-width: 100%;
-    overflow-x: hidden;
 }
 hr{
     margin: 0;
@@ -14,10 +12,11 @@ hr{
 body{
     font-size: 1.6rem;
     font-family: 'Montserrat', sans-serif;
-    background-color: $secondary-color;
+    background-color: $main-color;
     color: $third-color;
 }
 h2{
+    font-weight: bold;
     text-align: center;
     text-transform: uppercase;
 }
@@ -44,6 +43,7 @@ h2{
         }
 }
 .header{
+    background-color: $secondary-color;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -67,6 +67,7 @@ h2{
     }
     &-text{
         display: flex;
+        position: relative;
         justify-content: center;
         align-items: center;
         padding-top: 2em;
@@ -75,6 +76,22 @@ h2{
         text-transform: uppercase;
         z-index: 5;
         color: $third-color;
+        &--icon img{
+            position: absolute;
+            opacity: 0.4;
+            &:nth-child(1){
+                top: 11%;
+            left: 10%;
+            width: 10%;
+            animation: rotateRight 60s infinite linear;
+            }
+            &:nth-child(2){
+                bottom: 10%;
+                right: 10%;
+                width: 12%;
+                animation: rotateLeft 80s infinite linear;
+            }
+        }
     }
     .btn{
         color:$third-color;
@@ -99,6 +116,18 @@ main{
         &-text{
             padding: 1em;
             order:1;
+            letter-spacing: 1px;
+            h3{
+                font-weight: bold;
+            }
+            a{
+                text-decoration: none;
+                color:$third-color;
+                font-weight: bold;
+                &:hover{
+                    color: $fourth-color;
+                }
+            }
         }
     }
     .offert{
@@ -160,6 +189,24 @@ main{
                 }
             }
         }
+        &-img{
+        img{
+            position: absolute;
+            opacity: 0.4;
+            &:nth-child(1){
+                top: 30%;
+                left: 10%;
+                width: 10%;
+                animation: rotateLeft 60s infinite linear;
+            }
+            &:nth-child(2){
+                bottom: 15%;
+                right: 10%;
+                width: 8%;
+                animation: rotateRight 40s infinite linear;
+            }
+        }
+    }
     }
     .socials{
         &-box{
@@ -180,10 +227,9 @@ main{
             align-items: center;
             justify-content: center;
             width: 50%;
-            a{
+            p{
                 padding: 1em;
                 text-align: center;
-                text-decoration: none;
                 color:$third-color;
                 &:nth-child(2){
                     word-break: break-all;
@@ -245,11 +291,12 @@ main{
     background-color: $secondary-color;
     &-box{
         position: relative;
+        align-items: center;
         border: 1px solid $third-color;
         border-radius: 10px;
         text-align: center;
         padding: 1em;
-        margin: 1em;
+        margin: 1em 0;
         overflow: hidden;
         transition: .5s;
         &:hover button, &:hover{
@@ -260,6 +307,9 @@ main{
         h3{
             font-weight: bold;
             font-size: 2rem;
+        }
+        hr{
+            padding-bottom: 0.5em;
         }
         p{
             padding: 0.1em 0;
@@ -276,7 +326,32 @@ main{
             border: 1px solid $third-color;
             border-radius: 10px;
             transition: .5s;
+            &:hover{
+                background-color: $main-color;
+                color: $third-color;
+            }
         }
+    }
+    &-coach{
+        display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 1em;
+            a{
+            padding: 1em 2em;
+        text-decoration: none;
+        color: $third-color;
+        transition: color .5s;
+        border: 2px solid $third-color;
+        transition: .5s;
+        border-radius: 10px;
+        &:hover{
+            color: $main-color;
+            background-color: $third-color;
+        }
+    }
     }
 }
     .promotions{
@@ -285,13 +360,13 @@ main{
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-            align-items: center;
+            align-items: flex-start;
             text-align: center;
         }
         &-list{
             border: 1px solid $third-color;
             border-radius: 10px;
-            padding: 2em;
+            padding: 1em;
             margin: 2em 0;
             transition: .5s;
             .discount-tag, span{
@@ -332,12 +407,14 @@ main{
         &-box{
             padding: 1em;
             input{
+                border: 2px solid $third-color;
                 padding: 0.5em 0em;
             }
             input:nth-child(1){
                 margin-bottom: 2em;
             }
             textarea{
+                border: 2px solid $third-color;
                     width: 300px;
                     height: 150px;
             }
@@ -350,9 +427,37 @@ main{
         }
     }
 }
+.coach{
+    padding: 2em 0;
+    background-color: $secondary-color;
+    &__box{
+        &-info{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 2em;
+            &--img{
+                img{
+                    border-radius: 20px;
+                    width: 100%;
+                }
+            }
+            &--text{
+                word-spacing: 1px;
+                letter-spacing: 1px;
+                padding: 2em 1em;
+            }
+        }
+        h2{
+            padding-top: 2em;
+        }
+    }
+}
 .footer{
     text-align: center;
     padding: 1em;
+    background-color: $secondary-color;
 }
 @import "./animations";
 @import "./medium";

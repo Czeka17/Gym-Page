@@ -58,5 +58,23 @@ main{
         }
     }
 }
+.coach{
+    &__box{
+        &-info{
+            flex-direction: row;
+            &--img{
+                &--right{
+                    order: 1;
+                }
+            }
+            &--text{
+                padding: 2em;
+                &--right{
+                    order: 0;
+                }
+            }
+        }
+    }
+}
 }
 }
