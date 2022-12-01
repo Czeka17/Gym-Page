@@ -20,6 +20,9 @@ h2{
     text-align: center;
     text-transform: uppercase;
 }
+.wobble-hor-bottom {
+	animation: wobble-hor-bottom 2s infinite both;
+}
 .underline {
     width: 60px;
     height: 4px;
@@ -32,6 +35,9 @@ h2{
     font-size: 1.3rem;
     z-index: 999;
     transition: .3s;
+        i{
+            transition: .3s;
+        }
         a{
             position: relative;
         }
@@ -247,7 +253,7 @@ main{
             justify-content: center;
             width: 50%;
             p{
-                padding: 1em;
+                padding: 1em 0;
                 text-align: center;
                 color:$third-color;
                 &:nth-child(2){
@@ -470,6 +476,30 @@ main{
         }
         h2{
             padding-top: 2em;
+        }
+    }
+}
+.coach__socials{
+    padding: 3em 0;
+    &-box{
+        &--text{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            padding: 2em 1em;
+            a{
+                text-decoration: none;
+                color: $third-color;
+                font-size: 2rem;
+                padding: 1em 0;
+            }
+            p{
+                transition: 0.3s;
+            }
+            p:hover{
+                color: $fourth-color;
+            }
         }
     }
 }

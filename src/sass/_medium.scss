@@ -76,5 +76,12 @@ main{
         }
     }
 }
+.coach__socials{
+    &-box{
+        &--text{
+            flex-direction: row;
+        }
+    }
+}
 }
 }
