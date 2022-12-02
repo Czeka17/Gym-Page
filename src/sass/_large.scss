@@ -1,8 +1,17 @@
 @media(min-width:992px){
+    .navbar{
+        &-brand{
+            display: none;
+        }
+    }
 .header{
     flex-direction: row;
-    .header-img{
+    &-img{
         height: 100%;
+        order: 1;
+    }
+    &-text{
+        order: 0;
     }
 }
 main{
@@ -18,9 +27,11 @@ main{
         &-text{
             order:0;
             padding: 0 1em;
+            font-size: 1.6rem;
         }
     }
 .offert{
+    font-size: 1.6rem;
     &-box{
     flex-direction: row;
     }
@@ -31,9 +42,15 @@ main{
         order:1;
     }
 }
+.group{
+    font-size: 1.6rem;
+}
 .socials{
     &-box{
         flex-direction: row;
+    }
+    &-text{
+        font-size: 1.6rem;
     }
 }
 .table-list{
@@ -47,6 +64,7 @@ main{
         }
 }
 .we-are-here{
+    font-size: 2rem;
     &__box{
         flex-direction: row;
     }
@@ -62,6 +80,7 @@ main{
     }
 }
 .coach{
+    font-size: 1.6rem;
     &__box{
         &-info{
             flex-direction: row;

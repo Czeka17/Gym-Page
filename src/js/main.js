@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function(){
 const nav = document.querySelector('.navbar');
 const footerYear = document.querySelector('.footer__year');
 const navToggle = document.querySelector('.navbar-toggler');
+const navbar = document.querySelector('.navbar-nav')
 
 const addShadow = () => {
     if(window.scrollY >= 200){
@@ -23,6 +24,6 @@ const handleYear = () =>{
     footerYear.innerText = year;
 }
 handleYear()
-window.addEventListener('scroll', addShadow)
+window.addEventListener('scroll',addShadow)
 navToggle.addEventListener('click', showNav)
 })

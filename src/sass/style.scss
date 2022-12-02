@@ -67,6 +67,7 @@ h2{
             transform: scaleX(1);
             transform-origin: left;
         }
+
 }
 .header{
     background-color: $secondary-color;
@@ -88,7 +89,7 @@ h2{
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0,0,0,0.5);
+        background-color: rgba(115,95,50,0.15);
         z-index: -1;
     }
     &-text{
@@ -145,6 +146,7 @@ main{
             padding: 1em;
             order:1;
             letter-spacing: 1px;
+            font-size: 1.3rem;
             h3{
                 font-weight: bold;
             }
@@ -160,6 +162,8 @@ main{
         }
     }
     .offert{
+        font-size: 1.3rem;
+        padding: 5em 0;
         &-box{
             position: relative;
             padding-top: 2em;
@@ -186,6 +190,7 @@ main{
             text-decoration: none;
             text-transform: uppercase;
             border: 1px solid $third-color;
+            border-radius: 10px;
             color: $third-color;
             padding: 0.5em 1em;
             transition: .5s;
@@ -196,6 +201,7 @@ main{
         }
 }
     .group{
+        font-size: 1.3rem;
         height: 70vh;
         position: relative;
         background-color: $secondary-color;
@@ -212,6 +218,7 @@ main{
                 text-decoration: none;
                 text-transform: uppercase;
                 border: 1px solid $third-color;
+                border-radius: 10px;
                 color: $third-color;
                 padding: 1em 2em;
                 text-align: center;
@@ -242,7 +249,9 @@ main{
     }
     }
     .socials{
+        padding: 5em 0;
         &-box{
+            padding-top: 2em;
             display: flex;
         flex-direction: column;
         justify-content: center;
@@ -260,6 +269,7 @@ main{
             align-items: center;
             justify-content: center;
             width: 50%;
+            font-size: 1.3rem;
             p{
                 padding: 1em 0;
                 text-align: center;
@@ -414,7 +424,8 @@ main{
     }
 }
 .we-are-here{
-    padding: 3em 0;
+    font-size: 1.3rem;
+    padding: 5em 0;
     &__box{
         position: relative;
         display: flex;
@@ -427,7 +438,6 @@ main{
         &--text{
             text-align: center;
             letter-spacing: 2px;
-            font-size: 2rem;
         }
     }
 }
@@ -460,13 +470,16 @@ main{
             color:$third-color;
             background-color:$secondary-color;
             border: 1px solid $third-color;
+            border-radius: 10px;
         }
     }
 }
 .coach{
-    padding: 2em 0;
+    font-size: 1.3rem;
+    padding: 5em 0;
     background-color: $secondary-color;
     &__box{
+        padding: 2em 0;
         &-info{
             display: flex;
             flex-direction: column;
