@@ -5,6 +5,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    max-width: 100%;
 }
 hr{
     margin: 0;
@@ -198,6 +199,9 @@ main{
         height: 70vh;
         position: relative;
         background-color: $secondary-color;
+        h2{
+            padding:0 1em;
+        }
         &-ref{
             position: absolute;
             top: 50%;
@@ -428,7 +432,7 @@ main{
     }
 }
 .contact-us{
-    padding: 3em 2em;
+    padding: 3em 0em;
     background-color: $secondary-color;
     &__form{
         padding: 2em 0.5em;
@@ -516,7 +520,6 @@ main{
     padding: 1em;
     background-color: $secondary-color;
 }
-
 .circle-component{
     position: absolute;
     width: 200px;
