@@ -20,6 +20,7 @@ h2{
     text-align: center;
     text-transform: uppercase;
 }
+
 .wobble-hor-bottom {
 	animation: wobble-hor-bottom 2s infinite both;
 }
@@ -127,9 +128,11 @@ h2{
     }
 }
 main{
-    background-color: $main-color;
     .about-us{
         padding: 3em 0;
+        &-box{
+            position: relative;
+        }
         &-img{
             order: 0;
             padding: 1em;
@@ -157,6 +160,7 @@ main{
     }
     .offert{
         &-box{
+            position: relative;
             padding-top: 2em;
             display: flex;
         flex-direction: column;
@@ -289,6 +293,7 @@ main{
         }
         }
         &-box{
+            position: relative;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
@@ -382,6 +387,7 @@ main{
     .promotions{
         padding: 2em 1em;
         &-box{
+            position: relative;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
@@ -406,12 +412,13 @@ main{
 .we-are-here{
     padding: 3em 0;
     &__box{
+        position: relative;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
         &--map{
-            padding: 2em;
+            padding: 2em 0.5em;
         }
         &--text{
             text-align: center;
@@ -482,6 +489,7 @@ main{
 .coach__socials{
     padding: 3em 0;
     &-box{
+        position: relative;
         &--text{
             display: flex;
             flex-direction: column;
@@ -507,6 +515,40 @@ main{
     text-align: center;
     padding: 1em;
     background-color: $secondary-color;
+}
+
+.circle-component{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: rgba(40, 42, 58, 0.5);
+    border-radius: 50%;
+    z-index: -100;
+}
+.first-circle{
+    top: -25px;
+    right: 10px;
+    animation: breathing infinite linear 10s ;
+}
+.second-circle{
+    bottom: -50px;
+    left: 10px;
+    animation: breathing infinite ease-in 20s ;
+}
+.third-circle{
+    top: 50%;
+    left: 30%;
+    animation: breathing infinite linear 10s ;
+}
+.fourth-circle{
+    top: 10%;
+    left: 20%;
+    animation: breathing infinite ease-in 20s;
+}
+.fifth-circle{
+    top: 10%;
+    left: 30%;
+    animation: breathing infinite linear 10s;
 }
 @import "./animations";
 @import "./large";
