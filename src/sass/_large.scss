@@ -8,13 +8,16 @@
 main{
     padding-top: 3em;
     .about-us{
+        &-box{
+            margin-bottom: 3em;
+        }
         &-img{
             order:0;
             padding: 0 1em;
         }
         &-text{
             order:0;
-            padding: 3em 1em;
+            padding: 0 1em;
         }
     }
 .offert{
