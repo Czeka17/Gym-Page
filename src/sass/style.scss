@@ -21,7 +21,9 @@ h2{
     text-align: center;
     text-transform: uppercase;
 }
-
+.bounce-top {
+	animation: bounce-top 3s infinite both;
+}
 .wobble-hor-bottom {
 	animation: wobble-hor-bottom 2s infinite both;
 }
@@ -89,7 +91,7 @@ h2{
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(40,42,75,0.8);
+        background-color: rgba(40,42,75,0.6);
         z-index: -1;
     }
     &-text{
@@ -439,29 +441,15 @@ main{
         &--text{
             text-align: center;
             letter-spacing: 2px;
-        }
-        &--icon img{
-            position: absolute;
-            opacity: 0.7;
-            z-index: -5;
-            &:nth-child(1){
-                bottom:1%;
-            left: 10%;
-            width: 10%;
-            animation: rotateRight 60s infinite linear;
             }
-            &:nth-child(2){
-                bottom: 10%;
-                right: 10%;
-                width: 12%;
-                animation: rotateLeft 80s infinite linear;
+            img{
+                padding-top: 2em;
             }
         }
     }
-}
 .contact-us{
     font-size: 1.3rem;
-    padding: 3em 0em;
+    padding: 5em 0em;
     background-color: $secondary-color;
     &__box{
         background-color: $main-color;
@@ -472,6 +460,7 @@ main{
             padding: 3em 2em;
     }
     &__info{
+        // width: 30%;
         &-title{
             font-weight: bold;
             padding: 1em 0;
@@ -492,6 +481,8 @@ main{
             background-color: $third-color;
     }
     &__form{
+        // width: 50%;
+        // margin-left: 2em;
         &-box{
             padding: 0.5em 0;
             display: flex;
