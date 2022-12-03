@@ -5,8 +5,8 @@ const navToggle = document.querySelector('.navbar-toggler');
 const navbar = document.querySelector('.navbar-nav')
 
 const addShadow = () => {
-    if(window.scrollY >= 200){
-        nav.style.backgroundColor = "#000000"
+    if(window.scrollY >= 20){
+        nav.style.backgroundColor = "#291A2A"
     }else{
         nav.style.backgroundColor = 'transparent'
     }
@@ -16,7 +16,7 @@ const showNav = () => {
     {
         nav.style.backgroundColor = "transparent"
     }else{
-        nav.style.backgroundColor = "#000000"
+        nav.style.backgroundColor = "#291A2A"
     }
 }
 const handleYear = () =>{

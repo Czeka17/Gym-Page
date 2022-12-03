@@ -1,9 +1,4 @@
 @media(min-width:992px){
-    .navbar{
-        &-brand{
-            display: none;
-        }
-    }
 .header{
     flex-direction: row;
     &-img{
@@ -80,6 +75,7 @@ main{
     }
 }
 .coach{
+    padding: 4em 0;
     font-size: 1.6rem;
     &__box{
         &-info{

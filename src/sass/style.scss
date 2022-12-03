@@ -70,6 +70,7 @@ h2{
 
 }
 .header{
+    margin-top: 2.7em;
     background-color: $secondary-color;
     height: 100vh;
     width: 100%;
@@ -89,7 +90,7 @@ h2{
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(115,95,50,0.15);
+        background-color: rgba(41,26,42,0.2);
         z-index: -1;
     }
     &-text{
@@ -251,6 +252,7 @@ main{
     .socials{
         padding: 5em 0;
         &-box{
+            position: relative;
             padding-top: 2em;
             display: flex;
         flex-direction: column;
@@ -439,6 +441,23 @@ main{
             text-align: center;
             letter-spacing: 2px;
         }
+        &--icon img{
+            position: absolute;
+            opacity: 0.7;
+            z-index: -5;
+            &:nth-child(1){
+                bottom:1%;
+            left: 10%;
+            width: 10%;
+            animation: rotateRight 60s infinite linear;
+            }
+            &:nth-child(2){
+                bottom: 10%;
+                right: 10%;
+                width: 12%;
+                animation: rotateLeft 80s infinite linear;
+            }
+        }
     }
 }
 .contact-us{
@@ -475,6 +494,7 @@ main{
     }
 }
 .coach{
+    position: relative;
     font-size: 1.3rem;
     padding: 5em 0;
     background-color: $secondary-color;
@@ -548,7 +568,7 @@ main{
 }
 .second-circle{
     bottom: -50px;
-    left: 10px;
+    left: 40px;
     animation: breathing infinite ease-in 20s ;
 }
 .third-circle{
@@ -557,7 +577,7 @@ main{
     animation: breathing infinite linear 10s ;
 }
 .fourth-circle{
-    top: 10%;
+    top: 30%;
     left: 20%;
     animation: breathing infinite ease-in 20s;
 }
