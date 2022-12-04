@@ -5,7 +5,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    max-width: 100%;
+    // max-width: 100%;
 }
 hr{
     margin: 0;
@@ -77,7 +77,7 @@ h2{
     width: 100%;
     display: flex;
     flex-direction: column;
-    &-img{
+    &__img{
         height: 50%;
     position: relative;
         background-image: url('../img/IMG_5923.jpg');
@@ -85,7 +85,7 @@ h2{
         background-position:center;
         z-index: 0;
     }
-    &-shadow{
+    &__shadow{
         position: absolute;
         top: 0;
         left: 0;
@@ -94,7 +94,7 @@ h2{
         background-color: rgba(40,42,75,0.6);
         z-index: -1;
     }
-    &-text{
+    &__text{
         display: flex;
         position: relative;
         justify-content: center;
@@ -134,17 +134,17 @@ h2{
 main{
     .about-us{
         padding: 3em 0;
-        &-box{
+        &__box{
             position: relative;
         }
-        &-img{
+        &__img{
             order: 0;
             padding: 1em;
             img{
                 width: 100%;
             }
         }
-        &-text{
+        &__text{
             padding: 1em;
             order:1;
             letter-spacing: 1px;
@@ -166,13 +166,13 @@ main{
     .offert{
         font-size: 1.3rem;
         padding: 5em 0;
-        &-box{
+        &__box{
             position: relative;
             padding-top: 2em;
             display: flex;
         flex-direction: column;
         }
-        &-img{
+        &__img{
             position: relative;
             padding: 1em;
             z-index: 0;
@@ -180,7 +180,7 @@ main{
                 width: 100%;
             }
         }
-        &-text{
+        &__text{
             display: flex;
             padding: 1em;
             flex-direction:column;
@@ -188,7 +188,7 @@ main{
             justify-content: center;
             align-items: center;
         }
-        &-btn{
+        &__btn{
             text-decoration: none;
             text-transform: uppercase;
             border: 1px solid $third-color;
@@ -210,7 +210,7 @@ main{
         h2{
             padding:0 1em;
         }
-        &-ref{
+        &__ref{
             position: absolute;
             top: 50%;
             left: 50%;
@@ -231,7 +231,7 @@ main{
                 }
             }
         }
-        &-img{
+        &__img{
         img{
             position: absolute;
             opacity: 0.4;
@@ -252,7 +252,7 @@ main{
     }
     .socials{
         padding: 5em 0;
-        &-box{
+        &__box{
             position: relative;
             padding-top: 2em;
             display: flex;
@@ -260,13 +260,13 @@ main{
         justify-content: center;
         align-items: center;
         }
-        &-img{
+        &__img{
             img{
                 padding: 1em;
                 width: 100%;
             }
         }
-        &-text{
+        &__text{
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -309,14 +309,14 @@ main{
             padding: 1em;
         }
         }
-        &-box{
+        &__box{
             position: relative;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
         }
-        &-contact{
+        &__contact{
             display: flex;
             justify-content: center;
             align-items: center;
@@ -336,7 +336,7 @@ main{
 .offert-list{
     padding: 2em 1em;
     background-color: $secondary-color;
-    &-box{
+    &__box{
         position: relative;
         align-items: center;
         border: 1px solid $third-color;
@@ -379,7 +379,7 @@ main{
             }
         }
     }
-    &-coach{
+    &__coach{
         display: flex;
             justify-content: center;
             align-items: center;
@@ -403,7 +403,7 @@ main{
 }
     .promotions{
         padding: 2em 1em;
-        &-box{
+        &__box{
             position: relative;
             display: flex;
             flex-direction: column;
@@ -411,7 +411,7 @@ main{
             align-items: flex-start;
             text-align: center;
         }
-        &-list{
+        &__list{
             border: 1px solid $third-color;
             border-radius: 10px;
             padding: 1em;
@@ -460,7 +460,6 @@ main{
             padding: 3em 2em;
     }
     &__info{
-        // width: 30%;
         &-title{
             font-weight: bold;
             padding: 1em 0;
@@ -481,8 +480,6 @@ main{
             background-color: $third-color;
     }
     &__form{
-        // width: 50%;
-        // margin-left: 2em;
         &-box{
             padding: 0.5em 0;
             display: flex;

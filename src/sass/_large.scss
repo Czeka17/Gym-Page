@@ -1,25 +1,25 @@
 @media(min-width:992px){
 .header{
     flex-direction: row;
-    &-img{
+    &__img{
         height: 100%;
         order: 1;
     }
-    &-text{
+    &__text{
         order: 0;
     }
 }
 main{
     padding-top: 3em;
     .about-us{
-        &-box{
+        &__box{
             margin-bottom: 3em;
         }
-        &-img{
+        &__img{
             order:0;
             padding: 0 1em;
         }
-        &-text{
+        &__text{
             order:0;
             padding: 0 1em;
             font-size: 1.6rem;
@@ -27,13 +27,13 @@ main{
     }
 .offert{
     font-size: 1.6rem;
-    &-box{
+    &__box{
     flex-direction: row;
     }
-    &-text{
+    &__text{
         order:0;
     }
-    &-img{
+    &__img{
         order:1;
     }
 }
@@ -41,20 +41,20 @@ main{
     font-size: 1.6rem;
 }
 .socials{
-    &-box{
+    &__box{
         flex-direction: row;
     }
-    &-text{
+    &__text{
         font-size: 1.6rem;
     }
 }
 .table-list{
-        &-box{
+        &__box{
             flex-direction: row;
         }
     }
     .promotions{
-        &-box{
+        &__box{
             flex-direction: row;
         }
 }
@@ -68,6 +68,13 @@ main{
     font-size: 1.5rem;
     &__box{
         flex-direction: row;
+    }
+    &__info{
+        width: 30%;
+    }
+    &__form{
+        width: 50%;
+        margin-left: 2em;
     }
     &__line{
         margin: 0 2em;
