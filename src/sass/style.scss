@@ -435,10 +435,10 @@ main{
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        &--map{
+        &-map{
             padding: 2em 0.5em;
         }
-        &--text{
+        &-text{
             text-align: center;
             letter-spacing: 2px;
             }
@@ -481,13 +481,41 @@ main{
     }
     &__form{
         &-box{
+            position: relative;
             padding: 0.5em 0;
             display: flex;
         flex-direction: column;
         input, textarea{
+            padding:10px;
+            border: 1px solid $third-color;
+            background: $main-color;
+            color: $third-color;
+            outline: none;
             border-radius: 10px;
+            transition: 0.5s;
+            &:valid~span,
+            &:focus~span{
+                color: $third-color;
+                transform: translateX(10px) translateY(-8px);
+                font-size: 0.65em;
+                padding: 0 10px;
+                background-color: $main-color;
+                border-left: 1px solid $third-color;
+                border-right: 1px solid $third-color;
+                letter-spacing: 0.2em;
+            }
+        }
+        span{
+            position: absolute;
+            left: 0;
+            padding: 10px;
+            pointer-events: none;
+            color: rgba(198, 151, 45, 0.5);
+            text-transform: uppercase;
+            transition: 0.5s;
         }
         }
+        
         &-btn{
             border-radius: 10px;
             margin-top: 2em;
