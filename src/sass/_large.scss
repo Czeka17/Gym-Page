@@ -2,6 +2,7 @@
 .header{
     flex-direction: row;
     &__img{
+        background-image: url("../img/dumbbells-header.jpg");
         height: 100%;
         order: 1;
     }
